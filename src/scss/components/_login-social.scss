@@ -1,0 +1,55 @@
+.login-social {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  background-color: var(--dark-blue);
+}
+
+.login-social::before {
+  @include roboto-bold;
+
+  content: "или";
+  position: absolute;
+  left: 50%;
+  top: -33px;
+  color: var(--mid-grey);
+  transform: translateX(-50%);
+}
+
+.login-social__title {
+  @include lato-bold;
+
+  margin: 0 0 10px;
+  padding: 0;
+  font-size: 15px;
+  line-height: 18px;
+  color: var(--white);
+}
+
+.login-social__buttons-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-social__button {
+  width: 32px;
+  height: 32px;
+  font-size: 0;
+}
+
+.login-social__button:not(:last-child) {
+  margin-right: 15px;
+}
+
+.login-social__button-svg {
+  width: 32px;
+  height: 32px;
+}
+
+.login-social__button-svg--gosuslugi {
+  background-color: var(--white);
+}

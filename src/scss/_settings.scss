@@ -16,9 +16,11 @@ html {
 
 .page__body {
   margin: 0;
+  height: 100%;
   min-width: 320px;
   min-height: 100%;
   font-size: 16px;
+  background-color: var(--light-grey);
 }
 
 img {
@@ -32,7 +34,9 @@ a {
 }
 
 .site-container {
-  overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .is-hidden {

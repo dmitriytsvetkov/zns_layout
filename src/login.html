@@ -3,12 +3,15 @@
 
 @include('partials/head.html')
 
-<body class="page__body">
+<body class="page__body page--login">
   <div class="site-container">
     @include('partials/header.html')
     <main class="main">
+      <div class="login-container">
+        @include('partials/login-form.html')
+        @include('partials/login-social.html')
+      </div>
     </main>
-
     @include('partials/footer.html')
     <!-- @include('html/h1.html') пример include -->
   </div>

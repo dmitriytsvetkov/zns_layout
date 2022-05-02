@@ -35,8 +35,12 @@ a {
 
 .site-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   height: 100%;
+}
+
+.page--login .site-container {
+  flex-direction: column;
 }
 
 .is-hidden {

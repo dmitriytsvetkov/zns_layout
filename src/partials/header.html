@@ -1,9 +1,10 @@
 <header class="header">
-  <div class="header__container">
-    <picture class="header__logo">
-      <source srcset="img/header-logo.avif" type="image/avif">
-      <source srcset="img/header-logo.webp" type="image/webp">
-      <img src="img/header-logo.png" loading="lazy" width="367" height="68" alt="Логотип движения ЗНС">
+  <div class="header__logo-container">
+    <picture class="header__logo header__logo--sm">
+      <source srcset="img/header-logo-small.avif" type="image/avif">
+      <source srcset="img/header-logo-small.webp" type="image/webp">
+      <img src="img/header-logo-small.png" loading="lazy" width="49" height="49" alt="Логотип движения ЗНС">
     </picture>
   </div>
+  @include('header-buttons.html')
 </header>
